@@ -4,14 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/styles.css" />
-
         <script
             src="https://kit.fontawesome.com/173b91d713.js"
             crossorigin="anonymous"
         ></script>
         <title>Chat | Kakao Clone</title>
     </head>
-    <body>
+    <body class="chats-body">
         <div class="status-bar">
             <div class="status-bar__column">
                 <span class="status-bar__clock">9:41</span>
@@ -40,7 +39,7 @@
                 </span>
             </div>
         </header>
-        <main class="chat">
+        <main class="chat-screen">
             <ul class="chat__messages">
                 <span class="chat__timestamp">Wed, April 15, 2020</span>
                 <li class="incoming-message message">
@@ -50,19 +49,37 @@
                         class="m-avatar message__avatar"
                     />
                     <div class="message__content">
-                        <span class="message__author">Best Friend</span>
-                        <div class="message__bubble">
+                        <span class="message__author">Kanae</span>
+                        <span class="message__bubble">
                             I love you
-                        </div>
+                        </span>
                     </div>
-                    <span class="message__timestamp">02:01</span>
+                </li>
+                <li class="sent-message message">
+                    <div class="message__content">
+                        <span class="message__bubble">
+                            Thank you! Me too!
+                        </span>
+                    </div>
                 </li>
                 <li class="incoming-message message">
-                    <span class="message__timestamp">02:01</span>
+                    <img
+                        src="images/avatar.jpg"
+                        alt=""
+                        class="m-avatar message__avatar"
+                    />
                     <div class="message__content">
-                        <div class="message__bubble">
-                            Thank you! Me too!
-                        </div>
+                        <span class="message__author">Kanae</span>
+                        <span class="message__bubble">
+                            I miss you
+                        </span>
+                    </div>
+                </li>
+                <li class="sent-message message">
+                    <div class="message__content">
+                        <span class="message__bubble">
+                            I miss you too
+                        </span>
                     </div>
                 </li>
             </ul>
